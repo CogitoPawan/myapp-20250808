@@ -1,0 +1,45 @@
+.
+├── backend
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── routes
+│   │   │   ├── __init__.py
+│   │   │   ├── anomaly.py
+│   │   │   └── login.py
+│   │   ├── models
+│   │   │   ├── __init__.py
+│   │   │   ├── anomaly.py
+│   │   │   └── user.py
+│   │   ├── db.py
+│   │   ├── security.py
+│   │   ├── config.py
+│   │   └── utils.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── alembic.ini
+│   └── alembic
+│       ├── env.py
+│       ├── versions
+│       │   └── <timestamp>_init_db.py
+├── frontend
+│   ├── public
+│   │   ├── index.html
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   └── components
+│   │       ├── NavBar.jsx
+│   │       ├── LoginForm.jsx
+│   │       └── Dashboard.jsx
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tailwind.config.js
+├── k8s
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+├── docker-compose.yaml
+├── README.md
+└── .gitignore
